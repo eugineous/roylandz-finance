@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roylandz Finance | Simple money planning for everyone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">Roylandz Finance</div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#audience">Who it's for</a>
+        <a href="#values">Values</a>
+        <a href="#ai">AI Coach</a>
+        <a href="#security">Security</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#founder">Founder</a>
+      </nav>
+      <a class="btn btn-primary" href="#demo">Try the demo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="demo">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Simple money planning for everyone</p>
+          <h1>Take control of your money – effortlessly.</h1>
+          <p class="lead">Roylandz Finance is the daily money companion built for Africa and beyond. Start budgeting, plan your cash flow, and build savings goals without downloading an app.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#instant-demo">Try it now – no signup</a>
+            <a class="btn btn-secondary" href="#features">Explore features</a>
+          </div>
+          <ul class="highlight-list" role="list">
+            <li>Track personal and business finances side by side.</li>
+            <li>Set savings goals and watch your progress grow.</li>
+            <li>Forecast upcoming bills so you’re never caught off guard.</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mock-card">
+            <div class="mock-card-header">
+              <span>November overview</span>
+              <span class="badge badge-success">KES 20,450 left</span>
+            </div>
+            <div class="mock-chart">
+              <div class="bar" style="--value:80">Budget</div>
+              <div class="bar actual" style="--value:62">Actual</div>
+            </div>
+            <dl class="mock-list">
+              <div>
+                <dt>Income</dt>
+                <dd>KES 120,000</dd>
+              </div>
+              <div>
+                <dt>Expenses</dt>
+                <dd>KES 99,550</dd>
+              </div>
+              <div>
+                <dt>Savings Goals</dt>
+                <dd>3 active goals</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instant-demo" id="instant-demo">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Experience instant insights</h2>
+          <p>Use the interactive planner to see how Roylandz helps you balance needs, wants, and savings.</p>
+        </div>
+        <div class="demo-grid">
+          <form class="demo-form" aria-label="Instant budget planner">
+            <div class="form-field">
+              <label for="income">Monthly income (KES)</label>
+              <input type="number" id="income" name="income" min="0" value="60000" />
+            </div>
+            <div class="form-field">
+              <label for="needs">Needs (%)</label>
+              <input type="range" id="needs" name="needs" min="30" max="70" value="50" />
+              <div class="range-value"><span id="needs-value">50</span>%</div>
+            </div>
+            <div class="form-field">
+              <label for="wants">Wants (%)</label>
+              <input type="range" id="wants" name="wants" min="10" max="40" value="30" />
+              <div class="range-value"><span id="wants-value">30</span>%</div>
+            </div>
+            <div class="form-field">
+              <label for="savings">Savings (%)</label>
+              <input type="range" id="savings" name="savings" min="10" max="40" value="20" />
+              <div class="range-value"><span id="savings-value">20</span>%</div>
+            </div>
+            <p class="helper-text">Adjust the sliders to match your lifestyle. Roylandz coaches you to keep savings consistent even when income is irregular.</p>
+          </form>
+          <div class="demo-results" aria-live="polite">
+            <h3>Suggested monthly plan</h3>
+            <div class="result-card">
+              <p><span class="label">Needs</span> <span id="needs-amount">KES 30,000</span></p>
+              <p><span class="label">Wants</span> <span id="wants-amount">KES 18,000</span></p>
+              <p><span class="label">Savings & Goals</span> <span id="savings-amount">KES 12,000</span></p>
+            </div>
+            <p class="result-note">Keep at it! Saving even 20% monthly can build a 6-month emergency fund in just over two years.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <h2>All-in-one money management</h2>
+          <p>Roylandz Finance combines budgeting, saving, forecasting, and business support into one intuitive workspace.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Personal budgeting</h3>
+            <p>Track income from salary, side gigs, and freelance jobs. Log expenses in clear categories and compare planned vs. actual spending in real time.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Savings & goal tracking</h3>
+            <p>Create goals like “Trip to Mombasa” or “Emergency Fund.” Allocate income towards each target and celebrate milestones with motivating badges.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Cash flow planning</h3>
+            <p>Plot recurring bills on a calendar and forecast daily balances. Spot heavy-spend weeks ahead of time to avoid running out of cash.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Side hustle & business support</h3>
+            <p>Separate personal and business budgets, toggle between contexts, and view a simple profit-and-loss snapshot for your hustle.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Reports & summaries</h3>
+            <p>Visualize spending trends with export-ready charts. Compare months, spot overspending, and share summaries with partners or advisors.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Fast, friendly onboarding</h3>
+            <p>Start with a guided tour, sample data, or guest mode. Add income, budget categories, and goals in minutes to personalize your dashboard.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience" id="audience">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Built for every money journey</h2>
+          <p>Roylandz adapts to students, young professionals, hustlers, families, and small business owners.</p>
+        </div>
+        <div class="audience-grid">
+          <article>
+            <h3>Students & youth</h3>
+            <p>Stretch allowances or campus income. Visual feedback teaches budgeting habits and boosts savings rates for the next semester.</p>
+          </article>
+          <article>
+            <h3>Young professionals</h3>
+            <p>Balance rent, transport, loan repayments, and future goals. Forecast payday vs. bill dates to avoid end-of-month crunch.</p>
+          </article>
+          <article>
+            <h3>Hustlers & freelancers</h3>
+            <p>Track irregular income source by source. Let Roylandz suggest how much to save during busy weeks to cushion quieter periods.</p>
+          </article>
+          <article>
+            <h3>Families & household managers</h3>
+            <p>Plan shared budgets, set family goals, and review monthly reports together for transparent money conversations.</p>
+          </article>
+          <article>
+            <h3>Small business owners</h3>
+            <p>Manage shop finances alongside personal budgets. Keep funds separate yet connected and understand profitability at a glance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="values" id="values">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Brand values guiding every decision</h2>
+          <p>Clarity, Trust, Inclusion, Practicality, and Empowerment shape our product and community.</p>
+        </div>
+        <div class="values-grid">
+          <article>
+            <h3>Clarity</h3>
+            <p>Plain language labels like “What you earned” keep finances transparent. Simple visuals answer questions at a glance.</p>
+          </article>
+          <article>
+            <h3>Trust</h3>
+            <p>Data encryption, secure logins, and reliable calculations ensure Roylandz is a partner you can rely on every day.</p>
+          </article>
+          <article>
+            <h3>Inclusion</h3>
+            <p>Designed Africa-first with mobile-friendly layouts, local financial behaviors, and accessibility features baked in.</p>
+          </article>
+          <article>
+            <h3>Practicality</h3>
+            <p>Features solve real money tasks: log an expense in seconds, check today’s balance, or forecast bills instantly.</p>
+          </article>
+          <article>
+            <h3>Empowerment</h3>
+            <p>Celebrate wins, learn as you go, and build confidence to make bold financial decisions without shame.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai" id="ai">
+      <div class="container">
+        <div class="section-heading">
+          <h2>AI coach that keeps you on track</h2>
+          <p>Roylandz turns raw numbers into guidance so you always know the smartest next move.</p>
+        </div>
+        <div class="ai-grid">
+          <article>
+            <h3>Automated categorization</h3>
+            <p>Import M-PESA or bank statements and let AI recognize merchants, categorize expenses, and learn from your edits.</p>
+          </article>
+          <article>
+            <h3>Smart insights & alerts</h3>
+            <p>Get nudges when spending trends spike, bill-heavy weeks are approaching, or savings goals could use a boost.</p>
+          </article>
+          <article>
+            <h3>Predictive cash flow</h3>
+            <p>Forecast balances using past patterns, recurring bills, and your plans so you can adjust before money runs out.</p>
+          </article>
+          <article>
+            <h3>Goal coaching</h3>
+            <p>Let the AI recommend monthly contributions, round-ups, and celebratory milestones for every goal you create.</p>
+          </article>
+          <article>
+            <h3>Personalized advice</h3>
+            <p>Ask the in-app assistant questions like “Can I afford a new phone?” and get answers tailored to your actual numbers.</p>
+          </article>
+          <article>
+            <h3>Future automation</h3>
+            <p>Connect to mobile money and let Roylandz log transactions, send reminders on WhatsApp, or sync with your hustle tools.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="security" id="security">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Data security and privacy you can trust</h2>
+          <p>Your financial life deserves bank-grade protection. Roylandz is built with security at the core.</p>
+        </div>
+        <div class="security-grid">
+          <article>
+            <h3>Secure architecture</h3>
+            <p>End-to-end encryption, hardened infrastructure, and strict coding practices keep your information safe.</p>
+          </article>
+          <article>
+            <h3>Account protection</h3>
+            <p>Hashed passwords, optional two-factor authentication, and automatic session timeouts guard against unauthorized access.</p>
+          </article>
+          <article>
+            <h3>Privacy control</h3>
+            <p>Transparent policies, data export options, and delete-on-demand mean you’re always in charge of your data.</p>
+          </article>
+          <article>
+            <h3>Reliable backups</h3>
+            <p>Regular backups and redundancy ensure your history stays intact, even if devices change.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap" id="roadmap">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Roadmap to financial empowerment</h2>
+          <p>Roylandz is evolving into a full ecosystem that supports individuals, families, schools, and businesses.</p>
+        </div>
+        <ol class="timeline">
+          <li>
+            <h3>Today: Core companion</h3>
+            <p>Launch in Kenya with powerful budgeting, saving, cash flow, and AI insights tailored to local realities.</p>
+          </li>
+          <li>
+            <h3>Next: Grow across Africa</h3>
+            <p>Localize for new markets, integrate additional mobile money services, and partner with financial educators.</p>
+          </li>
+          <li>
+            <h3>Community focus</h3>
+            <p>Introduce school and enterprise packages, chama-friendly tools, and collaborative goal tracking.</p>
+          </li>
+          <li>
+            <h3>Wealth-building future</h3>
+            <p>Expand into investment guidance, responsible credit insights, and a vibrant learning community.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="founder" id="founder">
+      <div class="container founder-grid">
+        <div>
+          <h2>The story behind Roylandz</h2>
+          <p>Eugine Micah built Roylandz Finance after years of highlighting youth voices across Kenya as a journalist, presenter, and digital strategist. From Kisumu and Kakamega to Nairobi’s media stages, he witnessed how financial stress holds back students, creatives, and hustlers.</p>
+          <p>Roylandz Media started to tell authentic African stories with world-class production. Roylandz Finance extends that mission into personal finance: delivering world-class tools with local authenticity so every user can grow with confidence.</p>
+          <p class="quote">“Managing money should feel simple, empowering, and culturally aware. Roylandz is the companion I wished we all had.” — Eugine Micah, Founder</p>
+        </div>
+        <div class="founder-card">
+          <div class="founder-card-inner">
+            <h3>About Eugine</h3>
+            <ul>
+              <li>Journalist & Head of Digital Strategy at PPP TV.</li>
+              <li>Host of youth-focused shows like Urban News & Campus Xposure.</li>
+              <li>Founder of Roylandz Media and Nairobi Podcast.</li>
+              <li>Passionate about financial literacy and creator empowerment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">Roylandz Finance</div>
+        <p>Your daily money companion for budgeting, saving, and cash flow planning.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#audience">Who it’s for</a></li>
+          <li><a href="#ai">AI Coach</a></li>
+          <li><a href="#security">Security</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="mailto:hello@roylandz.finance">hello@roylandz.finance</a></li>
+          <li><a href="https://linkedin.com/in/euginemicah" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://instagram.com/roylandz" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year"></span> Roylandz Finance. Built in Kenya for everyone who wants to grow together.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
